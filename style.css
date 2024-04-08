@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 14px 16px;
+    position: relative;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.nav-links li a:hover{
+    color: palevioletred;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.logo ,text{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.icon{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+img .icon:hover{
+    color: palevioletred;
+}
+
+.slider-container{
+    display: flex;
+    border-radius: inherit;
+
+}
+
+.slider-container img{
+    width: 200px;
+    height: 150px;
+
+}
+ .text h2{
+    color: gray;
+    align-items: center;
+    text-align: center;
+ }
+
+#about{
+    display: flex;
+    align-items: center;
+}
+#about h1{
+    color: palevioletred;
+
+}
+
+#about p{
+    font-size: 1.5rem;
+}
+
+ #about .text-content{
+    align-items: center;
+    display: flex;
+}
+
+
+.image-1{
+    width: 400px;
+    height: 400px;
+}
+
+.text-section-2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+.image-2{
+    width: 400px;
+    height: auto;
+    float: left;
+}
+
+.text-section-3{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-3{
+    width: 400px;
+    height: 400px;
+}
+
+#shop h1{
+    font-size: 2rem;
+    color: palevioletred;
+}
+
+#shop p{
+    font-size: 1.5rem;
+}
+.card-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.card{
+    width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0,2);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 16px;
+
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+
+}
+
+.card-content button{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+
+}
+
+#Meet-Janette h2{
+    font-size: 2rem;
+    color: palevioletred
+}
+
+#Meet-Janette p{
+    font-size: 1.5rem;
+}
+
+#Meet-Janette a{
+    color: palevioletred;
+}
+#footer-container{
+    padding:30px;
+    background-color: bisque;
+}
+
+.footer-content{
+    font-size: 1.0rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+
+
+
+
+
