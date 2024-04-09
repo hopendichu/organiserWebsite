@@ -182,6 +182,17 @@ img .icon:hover{
 
 }
 
+ .card-container-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#blog h1{
+    color:palevioletred;
+}
+
 #Meet-Janette h2{
     font-size: 2rem;
     color: palevioletred
