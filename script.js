@@ -51,5 +51,40 @@ const blog=document.getElementById('blog')
         console.error('Error:',error);
     });
 
-   
     
+    function addToCart(productId){
+        let cart=JSON.parse(localStorage.getItem('cart')) ||[];
+    
+
+    let productExists=cart.some(product=> product.id=== productId);
+
+    if(productExists){
+        cart=cart.map(product=>{
+            if(product.id===productId){
+                return{
+                    ...product, quantity:product.quantity + 1
+                };
+
+            }
+
+            return product;
+        });
+    }else{
+        cart.push({
+            id:productId, quantity:1
+        });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart))
+
+    alert('Added to cart')
+}
+
+ 
+    function displayCartItems(){
+        let cart=JSON.parse(localStorage.getItem('cart')) || [];
+
+        console.log(cart);
+
+        document.getElementById('cart-icon').addEventListener('click', displayCartItems)
+    }
