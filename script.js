@@ -1,7 +1,14 @@
 
 const apiKey='85d0b236e525cb936aa270e45e85f69a';
 const apiUrl="https://gnews.io/api/v4/search?q=home+organising&apikey=85d0b236e525cb963aa270e45e85f69a"
-const blog=document.getElementById('blog')
+const blog=document.getElementById('blog');
+
+
+const cardContainer=document.createElement('div');
+cardContainer.id='card-container';
+cardContainer.display='grid';
+cardContainer.style.gridTemplateColumns='repeat(3,1fr)';
+blog.appendChild(cardContainer);
 
   fetch(apiUrl)
     .then(response=>{
@@ -18,14 +25,15 @@ const blog=document.getElementById('blog')
             card.style.padding='16px';
             card.style.marginBottom='16px';
             card.style.border='1px solid #ccc';
+            card.style.display='flex';
             card.style.flexWrap='wrap';
-            card.style.justifyContent='center';
-            card.style.display='flex'
+
 
             const title=document.createElement('h2');
             title.textContent=article.title;
             title.style.fontweight='bold';
             title.style.marginBottom='8px';
+            title.style.color='black';
 
             const description=document.createElement('p');
             description.textContent=article.description;
@@ -38,11 +46,17 @@ const blog=document.getElementById('blog')
             link.style.color='palevioletred';
             link.style.textDecoration='none';
 
+            
             card.appendChild(title);
             card.appendChild(description);
             card.appendChild(link);
+            cardContainer.appendChild(card);
 
-            blog.appendChild(card);
+            
+            
+
+
+            
 
         });
     })
@@ -51,7 +65,6 @@ const blog=document.getElementById('blog')
         console.error('Error:',error);
     });
 
-    
     function addToCart(productId){
         let cart=JSON.parse(localStorage.getItem('cart')) ||[];
     
@@ -86,5 +99,5 @@ const blog=document.getElementById('blog')
 
         console.log(cart);
 
-        document.getElementById('cart-icon').addEventListener('click', displayCartItems)
+        document.getElementsByClassName('add-to-cart').addEventListener('click', displayCartItems)
     }

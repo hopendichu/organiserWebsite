@@ -66,22 +66,54 @@ img .icon:hover{
     color: palevioletred;
 }
 
-.slider-container{
+.sidebar-container{
     display: flex;
-    border-radius: inherit;
-
+    width: 50%;
+    margin-bottom: 30px;
+    justify-content: right;
+    text-align: right;
 }
 
-.slider-container img{
-    width: 200px;
-    height: 150px;
-
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
- .text h2{
-    color: gray;
+
+.side-bar{
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+.head{
+    background-color: palevioletred;
+    color: white;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
     align-items: center;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+
+ .content{
     text-align: center;
+
  }
+
 
 #about{
     display: flex;
@@ -191,6 +223,11 @@ img .icon:hover{
 
 #blog h1{
     color:palevioletred;
+}
+
+#blog .card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 #Meet-Janette h2{
